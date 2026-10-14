@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="de"><head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ofen Wirth – Öfen &amp; Kamine aus Crailsheim</title>
+<!-- Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Script -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "anthrazit": "#14171B",
+            "secondary-fixed": "#e9e1d7",
+            "tertiary-fixed": "#dfe3e8",
+            "orange-tief": "#8F4614",
+            "surface-container": "#22272D",
+            "secondary-container": "#4d4841",
+            "error": "#FFB4AB",
+            "on-primary-fixed": "#301400",
+            "creme": "#F5F1EA",
+            "secondary-fixed-dim": "#cdc5bc",
+            "surface-tint": "#ffb782",
+            "primary-fixed": "#ffdcc5",
+            "on-surface": "#e1e2e8",
+            "on-secondary-fixed-variant": "#4b463f",
+            "logo-orange": "#E7914C",
+            "on-surface-variant": "#d9c2b4",
+            "surface-container-highest": "#333940",
+            "secondary": "#cdc5bc",
+            "on-tertiary-fixed": "#171c20",
+            "surface-dim": "#111418",
+            "primary-fixed-dim": "#ffb782",
+            "on-primary-container": "#5e2e00",
+            "on-error": "#690005",
+            "surface-variant": "#323539",
+            "on-secondary-container": "#beb7ae",
+            "on-primary-fixed-variant": "#703800",
+            "beige": "#ECE4DA",
+            "primary": "#ffb782",
+            "on-secondary": "#343029",
+            "background": "#111418",
+            "on-background": "#e1e2e8",
+            "inverse-primary": "#914c08",
+            "hellgrau-text": "#C9CDD2",
+            "tertiary-container": "#a2a6ab",
+            "on-error-container": "#ffdad6",
+            "on-tertiary-fixed-variant": "#43474b",
+            "tertiary-fixed-dim": "#c3c7cc",
+            "outline-variant": "#544439",
+            "surface-container-low": "#1B1F24",
+            "inverse-surface": "#e1e2e8",
+            "weiss": "#FFFFFF",
+            "primary-container": "#e7914c",
+            "surface": "#111418",
+            "surface-container-high": "#272a2e",
+            "on-tertiary": "#2c3135",
+            "surface-container-lowest": "#0b0e12",
+            "tertiary": "#c3c7cc",
+            "outline": "#6B7178",
+            "on-primary": "#4f2500",
+            "anthrazit-tief": "#0F1215",
+            "grau-text": "#555555",
+            "error-container": "#93000a",
+            "on-tertiary-container": "#373c40",
+            "inverse-on-surface": "#2e3135",
+            "on-secondary-fixed": "#1e1b15",
+            "surface-bright": "#36393e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0px",
+            "lg": "0px",
+            "xl": "0px",
+            "full": "0px"
+          },
+          "spacing": {
+            "space-xs": "0.5rem",
+            "space-xl": "clamp(72px, 9vw, 120px)",
+            "space-md": "1.5rem",
+            "space-lg": "2.5rem",
+            "gutter": "0px",
+            "space-sm": "1rem",
+            "margin": "clamp(24px, 6.6vw, 95px)"
+          },
+          "fontFamily": {
+            "headline-section": ["Montserrat", "sans-serif"],
+            "label": ["Montserrat", "sans-serif"],
+            "display-hero": ["Montserrat", "sans-serif"],
+            "body": ["Montserrat", "sans-serif"],
+            "subline": ["Montserrat", "sans-serif"],
+            "headline-box": ["Montserrat", "sans-serif"],
+            "button": ["Montserrat", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-section": [
+              "1.95rem",
+              {
+                "lineHeight": "1.2",
+                "letterSpacing": "0.02em",
+                "fontWeight": "900"
+              }
+            ],
+            "label": [
+              "0.7rem",
+              {
+                "lineHeight": "1.3",
+                "letterSpacing": "0.08em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-hero": [
+              "clamp(2.6rem, 5.4vw, 4.6rem)",
+              {
+                "lineHeight": "1.04",
+                "letterSpacing": "0.02em",
+                "fontWeight": "900"
+              }
+            ],
+            "body": [
+              "1.0625rem",
+              {
+                "lineHeight": "1.65",
+                "fontWeight": "400"
+              }
+            ],
+            "subline": [
+              "1.05rem",
+              {
+                "lineHeight": "1.3",
+                "letterSpacing": "0.02em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-box": [
+              "3rem",
+              {
+                "lineHeight": "1.14",
+                "fontWeight": "700"
+              }
+            ],
+            "button": [
+              "0.9rem",
+              {
+                "lineHeight": "1.2",
+                "letterSpacing": "0.04em",
+                "fontWeight": "700"
+              }
+            ]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Strict architectural resets for sharp 0px geometry */
+    * {
+      border-radius: 0px !important;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+
+<style>
+  /* Spartherm-Kopf: großes Logo, beim Scrollen kleiner Balken */
+  .kopf { transition: background-color .35s, box-shadow .35s; }
+  .kopf__innen { padding-top: 22px; padding-bottom: 22px; transition: padding .35s; }
+  .kopf__logo img { height: 150px; width: auto; transition: height .35s; }
+  .kopf.ist-kompakt { background: #14171B; box-shadow: 0 1px 0 rgba(255,255,255,.06); }
+  .kopf.ist-kompakt .kopf__innen { padding-top: 10px; padding-bottom: 10px; align-items: center; }
+  .kopf.ist-kompakt .kopf__logo img { height: 44px; }
+  .kopf.ist-kompakt .kopf__innen > div { padding-top: 0; }
+  @media (max-width: 767px) {
+    .kopf__logo img { height: 92px; }
+    .kopf.ist-kompakt .kopf__logo img { height: 40px; }
+  }
+  /* Menü */
+  .menue { position: fixed; inset: 0; z-index: 80; visibility: hidden; }
+  .menue__grund { position: absolute; inset: 0; background: rgba(0,0,0,.55); opacity: 0; transition: opacity .3s; }
+  .menue__feld { position: absolute; top: 0; right: 0; bottom: 0; width: min(440px, 92vw); background: #14171B;
+    padding: 96px 48px 48px; transform: translateX(100%); transition: transform .35s ease; overflow-y: auto; }
+  .menue.ist-offen { visibility: visible; }
+  .menue.ist-offen .menue__grund { opacity: 1; }
+  .menue.ist-offen .menue__feld { transform: none; }
+  .menue__zu { position: absolute; top: 24px; right: 28px; width: 48px; height: 48px; color: #fff; }
+  .menue__zu span { font-size: 30px; }
+  .menue ul { list-style: none; margin: 0 0 40px; padding: 0; }
+  .menue li a { display: block; padding: 10px 0; color: #fff; font-size: 24px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
+  .menue li a:hover { color: #E7914C; }
+  .menue li.unter a { font-size: 17px; font-weight: 500; padding: 6px 0 6px 18px; color: #C9CDD2; text-transform: none; letter-spacing: 0; }
+  .menue__kontakt { color: #C9CDD2; font-size: 16px; }
+  .menue__kontakt a { color: #fff; }
+  /* Kundenstimmen wie Focus: drei überlappende Bilder, heben sich beim Drüberfahren hervor */
+  .collage { position: relative; height: 571px; width: 100%; max-width: 765px; justify-self: end; }
+  .karte { position: absolute; margin: 0; overflow: hidden; border-radius: 12px !important; box-shadow: 0 10px 30px -18px rgba(0,0,0,.45);
+    transition: transform .45s ease, box-shadow .45s ease; }
+  .karte img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+  .karte::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.82) 100%); }
+  .karte figcaption { position: absolute; left: 18px; right: 18px; bottom: 14px; z-index: 1; color: #fff; font-size: 14px; line-height: 1.4; }
+  .karte .sterne { display: block; color: #E7914C; font-size: 14px; letter-spacing: 2px; }
+  .karte q { display: block; margin: 2px 0 4px; font-size: 14px; font-style: italic; }
+  .karte .name { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #E7914C; }
+  .karte:hover { transform: translateY(-8px) scale(1.035); box-shadow: 0 24px 46px -18px rgba(0,0,0,.55); z-index: 5; }
+  .karte:hover img { transform: scale(1.06); }
+  .karte--a { left: 0; top: 171px; width: 450px; height: 324px; z-index: 3; }
+  .karte--b { left: 477px; top: 0; width: 288px; height: 288px; z-index: 2; }
+  .karte--c { left: 396px; top: 319px; width: 369px; height: 252px; z-index: 1; }
+  @media (max-width: 1023px) {
+    .collage { height: auto; display: grid; gap: 16px; justify-self: stretch; }
+    .karte { position: relative; left: auto; top: auto; width: 100%; height: auto; aspect-ratio: 1.39; }
+    .karte:hover { transform: none; }
+  }
+  /* Echte Herstellerlogos */
+  .marken-logos { list-style: none; margin: 0 auto; padding: 0; max-width: 1240px; display: flex; flex-wrap: wrap;
+    justify-content: center; align-items: center; gap: 24px 44px; }
+  .marken-logos li { height: 64px; display: flex; align-items: center; }
+  .marken-logos img { max-height: 40px; max-width: 128px; width: auto; filter: grayscale(1); opacity: .8; transition: filter .3s, opacity .3s; }
+  .marken-logos img.hoch { max-height: 62px; }
+  .marken-logos li:hover img { filter: none; opacity: 1; }
+
+  /* Hersteller-Laufband: wandert nach links, taucht rechts wieder auf */
+  .laufband { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); }
+  .laufband__spur { display: flex; width: max-content; list-style: none; margin: 0; padding: 0; animation: laufen 42s linear infinite; }
+  .laufband:hover .laufband__spur { animation-play-state: paused; }
+  .laufband__spur li { flex: none; height: 80px; padding: 0 46px; display: flex; align-items: center; }
+  .laufband__spur img { width: auto; filter: grayscale(1); opacity: .7; transition: filter .3s, opacity .3s; }
+  .laufband__spur img.breit { height: 30px; }
+  .laufband__spur img.mittel { height: 42px; }
+  .laufband__spur img.hoch { height: 58px; }
+  .laufband__spur li:hover img { filter: none; opacity: 1; }
+  @keyframes laufen { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (max-width: 767px) { .laufband__spur li { padding: 0 28px; } .laufband__spur { animation-duration: 30s; } }
+  @media (prefers-reduced-motion: reduce) {
+    .laufband { -webkit-mask-image: none; mask-image: none; }
+    .laufband__spur { animation: none; width: auto; flex-wrap: wrap; justify-content: center; }
+    .laufband__spur li[aria-hidden] { display: none; }
+  }
+</style>
+<style>
+.entwurf { position: fixed; left: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 70; margin: 0;
+  background: #14171B; color: #F5F1EA; border: 1px solid #E7914C; padding: 6px 10px;
+  font: 600 11px/1.3 Montserrat, Arial, sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+.entwurf b { color: #E7914C; }
+@media (max-width: 640px) { .entwurf span { display: none; } }
+</style>
+</head>
+<body class="bg-anthrazit text-on-surface font-body selection:bg-logo-orange selection:text-anthrazit overflow-x-hidden">
+<!-- 1. INFO BAR -->
+<aside id="leiste" class="w-full bg-logo-orange text-anthrazit py-2.5 px-margin z-50 fixed top-0 left-0 right-0 flex flex-wrap items-center justify-between font-headline-section font-bold text-xs uppercase tracking-wider">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm font-bold">store</span>
+<span>Ausstellung in Crailsheim<span class="hidden md:inline">: Termine auch außerhalb der Öffnungszeiten nach Vereinbarung.</span></span>
+</div>
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-1.5 underline underline-offset-4 decoration-anthrazit hover:opacity-80 transition-opacity font-extrabold text-xs" href="ausstellung.html">
+<span>Besuch vereinbaren</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+<button type="button" id="leiste-zu" aria-label="Hinweis schließen" class="-mr-3 w-11 h-11 -my-3 inline-flex items-center justify-center hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+</aside>
+<!-- 2. HEADER (SPARTHERM-STYLE, OVERLAPPING HERO) -->
+<header id="kopf" class="kopf fixed left-0 right-0 z-40">
+<div class="kopf__innen w-full px-margin flex items-start justify-between">
+<!-- Wordmark Logo Presence -->
+<a class="kopf__logo block" href="./"><img src="bilder/logo-ofen-wirth.png" alt="Ofen Wirth – zur Startseite" width="295" height="205"></a>
+<!-- Right Header Cluster -->
+<div class="flex items-center gap-6 md:gap-8 pt-2">
+<a class="hidden sm:flex items-center gap-2 text-weiss font-headline-section font-bold text-sm tracking-wider hover:text-logo-orange transition-colors" href="tel:+4979516884">
+<span class="material-symbols-outlined text-logo-orange text-lg">call</span>
+<span>07951 6884</span>
+</a>
+<a class="hidden md:inline-block border-2 border-logo-orange text-logo-orange hover:bg-logo-orange hover:text-anthrazit font-button text-button uppercase px-5 py-2.5 transition-colors font-bold tracking-wider" href="kontakt.html">
+          BERATUNG ANFRAGEN
+        </a>
+<!-- Minimalist Hamburger Menu Trigger -->
+<button aria-label="Menü öffnen" aria-controls="menue" aria-expanded="false" class="kopf__menu p-2 text-weiss hover:text-logo-orange transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-3xl font-light">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- 3. FULL-SCREEN HERO -->
+<section class="relative min-h-screen w-full flex flex-col justify-end overflow-hidden pt-36 pb-16 md:pb-24">
+<!-- Background Image with architectural dusk lighting -->
+<div class="absolute inset-0 z-0">
+<img alt="High-end architectural interior photography of a modern luxury living room at dusk with a built-in minimalist fireplace" class="w-full h-full object-cover object-[68%_50%]" src="bilder/stitch/start-stein.jpg"/>
+<!-- Dark gradient overlay fading down to deep anthracite -->
+<div class="absolute inset-0 bg-gradient-to-t from-anthrazit via-anthrazit/25 to-black/35"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-transparent"></div>
+<div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(20,23,27,0) 52%, rgba(20,23,27,.75) 80%, #14171B 100%)"></div>
+</div>
+<!-- Content Anchor at Bottom Left -->
+<div class="relative z-10 w-full px-margin flex flex-col md:flex-row md:items-end justify-between gap-10">
+<div class="max-w-4xl">
+<h1 class="text-weiss font-headline-section font-black text-[1.8rem] sm:text-6xl lg:text-7xl tracking-wide leading-[1.02] uppercase mb-6"><span class="block sm:whitespace-nowrap">ÖFEN &amp; KAMINE</span><span class="block sm:whitespace-nowrap font-light">AUS CRAILSHEIM</span></h1>
+<p class="font-subline text-subline text-logo-orange font-bold uppercase tracking-wider mb-8 max-w-2xl leading-relaxed">
+          FAMILIENBETRIEB SEIT ÜBER 100 JAHREN – BERATUNG, 3D-PLANUNG UND EINBAU AUS EINER HAND
+        </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="bg-logo-orange text-anthrazit font-button text-button font-black uppercase px-8 py-4 hover:brightness-105 transition-all inline-block tracking-wider" href="kontakt.html">
+            BERATUNGSTERMIN VEREINBAREN
+          </a>
+</div>
+</div>
+<!-- Bottom Right Scroll Indicator -->
+<div class="hidden md:flex flex-col items-center gap-2 self-end pb-2">
+<span class="text-xs uppercase font-label tracking-widest text-hellgrau-text text-opacity-70">Entdecken</span>
+<a aria-label="Nach unten scrollen" class="text-logo-orange hover:translate-y-1 transition-transform p-2" href="#intro">
+<span class="material-symbols-outlined text-3xl">arrow_downward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. INTRO SECTION (INSIDE DARK FADE #14171B) -->
+<section class="bg-anthrazit w-full pt-10 pb-space-xl" id="intro">
+<div class="w-full px-margin grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+<div class="lg:col-span-5 flex flex-col">
+<span class="font-label text-label text-logo-orange font-bold uppercase tracking-widest mb-3">UNSER ANGEBOT</span>
+<h2 class="font-headline-section text-weiss text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-wide leading-tight">
+          IHR FEUER, GEPLANT FÜR IHR ZUHAUSE
+        </h2>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-center">
+<p class="font-body text-body text-hellgrau-text text-lg leading-relaxed mb-6">
+          Ob Kachelofen, Heizkamin, Kaminofen oder Pelletofen: Wir beraten Sie in unserer Ausstellung in Crailsheim, planen Ihren Ofen als 3D-Zeichnung in Ihrem Grundriss und bauen ihn bei Ihnen ein.
+        </p>
+<p class="font-body text-body text-hellgrau-text text-lg leading-relaxed">
+          Als Familienbetrieb mit über 100 Jahren Erfahrung arbeiten wir mit Herstellern wie Brunner, Spartherm und Skantherm.
+        </p>
+</div>
+</div>
+</section>
+<!-- 5. SIX IMAGE/TEXT BOXES (STUV-STYLE 50/50 ALTERNATING GRID, 500px, 0px GUTTERS) -->
+<section class="w-full bg-anthrazit-tief">
+<!-- ROW 1: Kachelofen (Image Left | Text Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] w-full">
+<div class="relative h-[420px] lg:h-[500px] w-full overflow-hidden">
+<img alt="Architekturaufnahme eines maßgefertigten Kachelofens" class="w-full h-full object-cover" src="bilder/stitch/kachelofen.jpg"/>
+</div>
+<div class="bg-weiss flex flex-col justify-center px-margin lg:px-16 py-12 lg:py-0">
+<div>
+<span class="bg-anthrazit text-weiss text-xs font-headline-section font-bold px-3 py-1 inline-block uppercase tracking-widest mb-4">
+            KACHELOFEN
+          </span>
+<h3 class="text-grau-text text-3xl md:text-4xl font-headline-box font-bold leading-tight mb-4">
+            Kachelöfen nach Maß
+          </h3>
+<p class="text-grau-text font-body text-base mb-8 max-w-md leading-relaxed">
+            Ein Kachelofen wird für Ihren Raum gebaut. Form, Kacheln und Heizleistung planen wir gemeinsam mit Ihnen.
+          </p>
+<a class="bg-beige text-orange-tief font-button text-button font-bold uppercase px-6 py-3.5 hover:bg-[#dfd5c8] inline-block transition-colors" href="kacheloefen.html">
+            KACHELÖFEN ANSEHEN
+          </a>
+</div>
+</div>
+</div>
+<!-- ROW 2: Heizkamin (Text Left | Image Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] w-full">
+<div class="bg-weiss order-2 lg:order-1 flex flex-col justify-center px-margin lg:px-16 py-12 lg:py-0">
+<div>
+<span class="bg-anthrazit text-weiss text-xs font-headline-section font-bold px-3 py-1 inline-block uppercase tracking-widest mb-4">
+            HEIZKAMIN
+          </span>
+<h3 class="text-grau-text text-3xl md:text-4xl font-headline-box font-bold leading-tight mb-4">
+            Heizkamine mit großem Feuerblick
+          </h3>
+<p class="text-grau-text font-body text-base mb-8 max-w-md leading-relaxed">
+            Ein Heizkamin verbindet den Blick ins Feuer mit echter Heizleistung. Wir planen die Verkleidung passend zu Ihrem Wohnraum und bauen den Kamin bei Ihnen ein.
+          </p>
+<a class="bg-beige text-orange-tief font-button text-button font-bold uppercase px-6 py-3.5 hover:bg-[#dfd5c8] inline-block transition-colors" href="heizkamine.html">
+            HEIZKAMINE ANSEHEN
+          </a>
+</div>
+</div>
+<div class="relative h-[420px] lg:h-[500px] w-full overflow-hidden order-1 lg:order-2">
+<img alt="Moderner Heizkamin mit großem Feuerblick in dunkler Wand" class="w-full h-full object-cover" src="bilder/stitch/heizkamin.jpg"/>
+</div>
+</div>
+<!-- ROW 3: Kaminofen (Image Left | Text Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] w-full">
+<div class="relative h-[420px] lg:h-[500px] w-full overflow-hidden">
+<img alt="Eleganter freistehender Kaminofen mit sichtbarem Feuer" class="w-full h-full object-cover" src="bilder/stitch/kaminofen.jpg"/>
+</div>
+<div class="bg-weiss flex flex-col justify-center px-margin lg:px-16 py-12 lg:py-0">
+<div>
+<span class="bg-anthrazit text-weiss text-xs font-headline-section font-bold px-3 py-1 inline-block uppercase tracking-widest mb-4">
+            KAMINOFEN
+          </span>
+<h3 class="text-grau-text text-3xl md:text-4xl font-headline-box font-bold leading-tight mb-4">
+            Kaminöfen namhafter Hersteller
+          </h3>
+<p class="text-grau-text font-body text-base mb-8 max-w-md leading-relaxed">
+            Wir beraten Sie zu Kaminöfen von Herstellern wie Spartherm, Skantherm oder Drooff und stellen Ihren Ofen fachgerecht bei Ihnen auf.
+          </p>
+<a class="bg-beige text-orange-tief font-button text-button font-bold uppercase px-6 py-3.5 hover:bg-[#dfd5c8] inline-block transition-colors" href="kaminoefen.html">
+            KAMINÖFEN ANSEHEN
+          </a>
+</div>
+</div>
+</div>
+<!-- ROW 4: Pelletofen (Text Left | Image Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] w-full">
+<div class="bg-weiss order-2 lg:order-1 flex flex-col justify-center px-margin lg:px-16 py-12 lg:py-0">
+<div>
+<span class="bg-anthrazit text-weiss text-xs font-headline-section font-bold px-3 py-1 inline-block uppercase tracking-widest mb-4">
+            PELLETOFEN
+          </span>
+<h3 class="text-grau-text text-3xl md:text-4xl font-headline-box font-bold leading-tight mb-4">
+            Pelletöfen für bequeme Wärme
+          </h3>
+<p class="text-grau-text font-body text-base mb-8 max-w-md leading-relaxed">
+            Ein Pelletofen heizt automatisch und lässt sich einfach regeln. Wir helfen Ihnen, das passende Modell zu finden.
+          </p>
+<a class="bg-beige text-orange-tief font-button text-button font-bold uppercase px-6 py-3.5 hover:bg-[#dfd5c8] inline-block transition-colors" href="pelletoefen.html">
+            PELLETÖFEN ANSEHEN
+          </a>
+</div>
+</div>
+<div class="relative h-[420px] lg:h-[500px] w-full overflow-hidden order-1 lg:order-2">
+<img alt="Stilvoller automatischer Pelletofen in hellem Raum" class="w-full h-full object-cover" src="bilder/stitch/pelletofen.jpg"/>
+</div>
+</div>
+<!-- ROW 5: 3D-Planung (Image Left | Text Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] w-full">
+<div class="relative h-[420px] lg:h-[500px] w-full overflow-hidden">
+<img alt="3D Visualisierung und Grundrissplanung einer Feuerstätte" class="w-full h-full object-cover" src="bilder/stitch/planung.jpg"/>
+</div>
+<div class="bg-weiss flex flex-col justify-center px-margin lg:px-16 py-12 lg:py-0">
+<div>
+<span class="bg-anthrazit text-weiss text-xs font-headline-section font-bold px-3 py-1 inline-block uppercase tracking-widest mb-4">
+            3D-PLANUNG
+          </span>
+<h3 class="text-grau-text text-3xl md:text-4xl font-headline-box font-bold leading-tight mb-4">
+            Vorher sehen, wie Ihr Ofen wirkt
+          </h3>
+<p class="text-grau-text font-body text-base mb-8 max-w-md leading-relaxed">
+            Bevor gebaut wird, zeichnen wir Ihren Ofen als 3D-Planung in Ihren Grundriss. So sehen Sie vorher, wie er im Raum steht.
+          </p>
+<a class="bg-beige text-orange-tief font-button text-button font-bold uppercase px-6 py-3.5 hover:bg-[#dfd5c8] inline-block transition-colors" href="3d-planung.html">
+            ZUR 3D-PLANUNG
+          </a>
+</div>
+</div>
+</div>
+<!-- ROW 6: Ausstellung (Text Left | Image Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] w-full">
+<div class="bg-weiss order-2 lg:order-1 flex flex-col justify-center px-margin lg:px-16 py-12 lg:py-0">
+<div>
+<span class="bg-anthrazit text-weiss text-xs font-headline-section font-bold px-3 py-1 inline-block uppercase tracking-widest mb-4">
+            AUSSTELLUNG
+          </span>
+<h3 class="text-grau-text text-3xl md:text-4xl font-headline-box font-bold leading-tight mb-4">
+            Öfen in Crailsheim ansehen
+          </h3>
+<p class="text-grau-text font-body text-base mb-8 max-w-md leading-relaxed">
+            In unserer Ausstellung in der Schulstraße 14 sehen Sie Öfen und Materialien aus der Nähe. Termine sind auch außerhalb der Öffnungszeiten nach Vereinbarung möglich.
+          </p>
+<a class="bg-beige text-orange-tief font-button text-button font-bold uppercase px-6 py-3.5 hover:bg-[#dfd5c8] inline-block transition-colors" href="ausstellung.html">
+            BESUCH VEREINBAREN
+          </a>
+</div>
+</div>
+<div class="relative h-[420px] lg:h-[500px] w-full overflow-hidden order-1 lg:order-2">
+<img alt="Detailaufnahme glühende Flammen und Glut in Ofen-Ausstellung" class="w-full h-full object-cover" src="bilder/stitch/ausstellung.jpg"/>
+</div>
+</div>
+</section>
+<!-- 6. CUSTOMER REVIEWS (FOCUS-CREATION STYLE, CREME #F5F1EA BACKGROUND) -->
+<section class="bg-creme text-anthrazit py-space-xl overflow-hidden">
+<div class="w-full px-margin grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Column: Copy & Rating Details -->
+<div class="lg:col-span-4 flex flex-col">
+<span class="text-anthrazit font-headline-section font-extrabold text-lg tracking-wider uppercase mb-4">
+          KUNDENSTIMMEN
+        </span>
+<h2 class="text-anthrazit font-headline-section text-3xl md:text-4xl lg:text-[2.35rem] font-normal leading-snug mb-5">
+          Öfen, die bei unseren Kunden zuhause stehen
+        </h2>
+<div class="flex items-center gap-2 text-grau-text text-sm font-semibold mb-6">
+<span class="text-logo-orange text-base whitespace-nowrap shrink-0" style="letter-spacing:2px">★★★★☆</span>
+<span class="font-body text-grau-text">4,0 von 5 bei Google · 11 Bewertungen</span>
+</div>
+<div>
+<a class="border border-anthrazit text-anthrazit font-button text-button font-bold uppercase px-5 py-3 hover:bg-anthrazit hover:text-weiss transition-colors inline-block tracking-wider" href="https://www.google.com/maps/search/?api=1&amp;query=Ofen+Wirth+Schulstra%C3%9Fe+14+Crailsheim" rel="noopener noreferrer" target="_blank">
+            ALLE BEWERTUNGEN BEI GOOGLE
+          </a>
+</div>
+</div>
+<!-- Right Column: echte Kundenfotos (Focus-Collage) -->
+<div class="lg:col-span-8 collage">
+<figure class="karte karte--a"><img src="bilder/neu/stimme-1.jpg" alt="Kundenprojekt: verputzter Eck-Heizkamin" width="888" height="640">
+<figcaption><span class="sterne">★★★★★</span><q>Platzhalter für eine echte Google-Bewertung</q><span class="name">Vorname N., Ort</span></figcaption></figure>
+<figure class="karte karte--b"><img src="bilder/neu/stimme-2.jpg" alt="Kundenprojekt: Heizkamin als Raumteiler" width="640" height="640">
+<figcaption><span class="sterne">★★★★★</span><q>Platzhalter für eine echte Google-Bewertung</q><span class="name">Vorname N., Ort</span></figcaption></figure>
+<figure class="karte karte--c"><img src="bilder/neu/stimme-3.jpg" alt="Kundenprojekt: weißer Heizkamin neben einer Steinwand" width="740" height="505">
+<figcaption><span class="sterne">★★★★★</span><q>Platzhalter für eine echte Google-Bewertung</q><span class="name">Vorname N., Ort</span></figcaption></figure>
+</div>
+</div>
+</section>
+<!-- 7. MANUFACTURERS -->
+<section class="bg-weiss py-16 border-y border-outline-variant/20">
+<div class="w-full px-margin">
+<h4 class="text-center font-label text-label tracking-widest text-[#6B6B6B] uppercase mb-10">
+        UNSERE HERSTELLER
+      </h4>
+<div class="laufband"><ul class="laufband__spur"><li><img class="breit" style="height:30px" src="bilder/marken-neu/brunner.svg" alt="Brunner"></li><li><img class="hoch" style="height:60px" src="bilder/marken-neu/spartherm.png" alt="Spartherm"></li><li><img class="breit" style="height:25px" src="bilder/marken-neu/skantherm.svg" alt="Skantherm"></li><li><img class="mittel" style="height:52px" src="bilder/marken-neu/olsberg.png" alt="Olsberg"></li><li><img class="breit" style="height:36px" src="bilder/marken-neu/mcz.svg" alt="MCZ"></li><li><img class="mittel" style="height:44px" src="bilder/marken-neu/leda.png" alt="LEDA"></li><li><img class="hoch" style="height:58px" src="bilder/marken-neu/drooff.png" alt="Drooff"></li><li><img class="hoch" style="height:58px" src="bilder/marken-neu/hagos.svg" alt="Hagos"></li><li aria-hidden="true"><img class="breit" style="height:30px" src="bilder/marken-neu/brunner.svg" alt=""></li><li aria-hidden="true"><img class="hoch" style="height:60px" src="bilder/marken-neu/spartherm.png" alt=""></li><li aria-hidden="true"><img class="breit" style="height:25px" src="bilder/marken-neu/skantherm.svg" alt=""></li><li aria-hidden="true"><img class="mittel" style="height:52px" src="bilder/marken-neu/olsberg.png" alt=""></li><li aria-hidden="true"><img class="breit" style="height:36px" src="bilder/marken-neu/mcz.svg" alt=""></li><li aria-hidden="true"><img class="mittel" style="height:44px" src="bilder/marken-neu/leda.png" alt=""></li><li aria-hidden="true"><img class="hoch" style="height:58px" src="bilder/marken-neu/drooff.png" alt=""></li><li aria-hidden="true"><img class="hoch" style="height:58px" src="bilder/marken-neu/hagos.svg" alt=""></li></ul></div>
+</div>
+</section>
+<!-- 8. ZWEI ABSCHLUSS-FELDER (SPARTHERM-STIL: RUHIGES DUNKEL, TEXT + EIN KNOPF ALS BLOCK) -->
+<section class="grid grid-cols-1 md:grid-cols-2 w-full bg-surface-container-low" id="kontakt">
+<!-- Links: Beratung -->
+<div class="relative overflow-hidden flex flex-col px-margin md:px-12 lg:px-20 py-16 lg:py-24 border-b md:border-b-0 md:border-r border-outline-variant/30">
+<div class="absolute inset-0 opacity-15 pointer-events-none">
+<img alt="" class="w-full h-full object-cover" src="bilder/stitch/start.jpg" width="1376" height="768"/>
+</div>
+<div class="relative z-10 max-w-lg flex flex-col flex-1">
+<span class="text-logo-orange font-label text-label uppercase tracking-widest mb-3 block">PERSÖNLICH</span>
+<h3 class="text-weiss font-headline-section font-black text-2xl md:text-3xl uppercase tracking-wider leading-tight mb-4">
+          WELCHER OFEN PASST ZU IHNEN?
+        </h3>
+<p class="text-hellgrau-text font-body text-base leading-relaxed mb-8">
+          In einem persönlichen Gespräch klären wir Platz, Heizbedarf, Brennstoff und Budget. Danach wissen Sie, welcher Ofen zu Ihrem Haus passt.
+        </p>
+<a class="border border-logo-orange text-logo-orange hover:bg-logo-orange hover:text-anthrazit font-button text-button font-bold uppercase px-6 py-3.5 transition-colors inline-block self-start mt-auto" href="kontakt.html">
+          BERATUNG ANFRAGEN
+        </a>
+</div>
+</div>
+<!-- Rechts: Showroom -->
+<div class="relative overflow-hidden flex flex-col px-margin md:px-12 lg:px-20 py-16 lg:py-24">
+<div class="absolute inset-0 opacity-15 pointer-events-none">
+<img alt="" class="w-full h-full object-cover" src="bilder/stitch/ausstellung.jpg" width="1200" height="896"/>
+</div>
+<div class="relative z-10 max-w-lg flex flex-col flex-1">
+<span class="text-logo-orange font-label text-label uppercase tracking-widest mb-3 block">SHOWROOM</span>
+<h3 class="text-weiss font-headline-section font-black text-2xl md:text-3xl uppercase tracking-wider leading-tight mb-4">
+          ÖFEN LIVE ERLEBEN
+        </h3>
+<p class="text-hellgrau-text font-body text-base leading-relaxed mb-8">
+          Ein Ofen wirkt anders, wenn Sie direkt davorstehen. Besuchen Sie unsere Ausstellung in der Schulstraße 14 in Crailsheim, auf Wunsch auch außerhalb der Öffnungszeiten.
+        </p>
+<a class="border border-logo-orange text-logo-orange hover:bg-logo-orange hover:text-anthrazit font-button text-button font-bold uppercase px-6 py-3.5 transition-colors inline-flex items-center gap-2 self-start mt-auto" href="https://www.google.com/maps/search/?api=1&amp;query=Schulstra%C3%9Fe+14+74564+Crailsheim" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base leading-none">near_me</span>
+<span>ROUTE PLANEN</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 9. FOOTER (DEEP CHARCOAL #0F1215) -->
+<footer class="bg-anthrazit-tief text-hellgrau-text pt-space-xl pb-12 border-t border-outline-variant">
+<div class="w-full px-margin">
+<!-- Wordmark Header In Footer -->
+<div class="mb-14 pb-8 border-b border-outline-variant/40 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+<div>
+<img src="bilder/logo-ofen-wirth.png" alt="Ofen Wirth" width="295" height="205" style="height:96px;width:auto">
+</div>
+<div class="text-sm font-subline text-weiss font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-logo-orange text-base">verified</span>
+<span>Familienbetrieb mit über 100 Jahren Erfahrung</span>
+</div>
+</div>
+<!-- 3 Columns Footer Links -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+<!-- Col 1: Kontakt -->
+<div class="flex flex-col">
+<h5 class="text-weiss font-headline-section font-bold text-sm uppercase tracking-widest mb-6">KONTAKT</h5>
+<address class="not-italic space-y-3 font-body text-sm text-hellgrau-text">
+<p>Schulstraße 14<br/>74564 Crailsheim</p>
+<p class="pt-2">
+<a class="hover:text-logo-orange transition-colors block" href="tel:+4979516884">Tel. 07951 6884</a>
+<a class="hover:text-logo-orange transition-colors block" href="tel:+49795143419">Tel. 07951 43419</a>
+</p>
+<p class="pt-2">
+<a class="hover:text-logo-orange transition-colors" href="mailto:mail@ofen-wirth.de">mail@ofen-wirth.de</a>
+</p>
+</address>
+</div>
+<!-- Col 2: Öfen -->
+<div class="flex flex-col">
+<h5 class="text-weiss font-headline-section font-bold text-sm uppercase tracking-widest mb-6">ÖFEN</h5>
+<ul class="space-y-3 font-body text-sm">
+<li><a class="hover:text-logo-orange transition-colors" href="kacheloefen.html">Kachelöfen</a></li>
+<li><a class="hover:text-logo-orange transition-colors" href="heizkamine.html">Heizkamine</a></li>
+<li><a class="hover:text-logo-orange transition-colors" href="kaminoefen.html">Kaminöfen</a></li>
+<li><a class="hover:text-logo-orange transition-colors" href="pelletoefen.html">Pelletöfen</a></li>
+</ul>
+</div>
+<!-- Col 3: Ofen Wirth -->
+<div class="flex flex-col">
+<h5 class="text-weiss font-headline-section font-bold text-sm uppercase tracking-widest mb-6">OFEN WIRTH</h5>
+<ul class="space-y-3 font-body text-sm">
+<li><a class="hover:text-logo-orange transition-colors" href="3d-planung.html">3D-Planung</a></li>
+<li><a class="hover:text-logo-orange transition-colors" href="ausstellung.html">Ausstellung</a></li>
+<li><a class="hover:text-logo-orange transition-colors" href="ueber-uns.html">Über uns</a></li>
+<li><a class="hover:text-logo-orange transition-colors" href="kontakt.html">Kontakt</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar Divider and Copyright -->
+<div class="pt-8 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between text-xs text-hellgrau-text/60 gap-4">
+<div>
+          © 2026 Ofen Wirth
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-logo-orange transition-colors" href="impressum.html">Impressum</a>
+<span>·</span>
+<a class="hover:text-logo-orange transition-colors" href="datenschutz.html">Datenschutz</a>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="menue" id="menue" aria-hidden="true">
+  <div class="menue__grund" data-menue-zu></div>
+  <nav class="menue__feld" aria-label="Hauptmenü">
+    <button class="menue__zu" type="button" data-menue-zu aria-label="Menü schließen"><span class="material-symbols-outlined">close</span></button>
+    <ul>
+      <li><a href="#intro">Öfen</a></li>
+      <li class="unter"><a href="kacheloefen.html">Kachelöfen</a></li>
+      <li class="unter"><a href="heizkamine.html">Heizkamine</a></li>
+      <li class="unter"><a href="kaminoefen.html">Kaminöfen</a></li>
+      <li class="unter"><a href="pelletoefen.html">Pelletöfen</a></li>
+      <li><a href="3d-planung.html">3D-Planung</a></li>
+      <li><a href="ausstellung.html">Ausstellung</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <p class="menue__kontakt">Schulstraße 14, 74564 Crailsheim<br><a href="tel:+4979516884">07951 6884</a> · <a href="mailto:mail@ofen-wirth.de">mail@ofen-wirth.de</a></p>
+  </nav>
+</div>
+<script>
+(() => {
+  const leiste = document.getElementById('leiste');
+  const kopf = document.getElementById('kopf');
+  const setze = () => {
+    kopf.style.top = leiste.offsetHeight + 'px';
+    kopf.classList.toggle('ist-kompakt', window.scrollY > 40);
+  };
+  setze();
+  document.getElementById('leiste-zu').addEventListener('click', () => { leiste.style.display = 'none'; setze(); });
+  window.addEventListener('scroll', setze, { passive: true });
+  window.addEventListener('resize', setze);
+  const menue = document.getElementById('menue');
+  const knopf = document.querySelector('.kopf__menu');
+  const oeffne = (auf) => {
+    menue.classList.toggle('ist-offen', auf);
+    menue.setAttribute('aria-hidden', String(!auf));
+    knopf.setAttribute('aria-expanded', String(auf));
+    if (auf) menue.querySelector('.menue__zu').focus(); else knopf.focus();
+  };
+  knopf.addEventListener('click', () => oeffne(true));
+  menue.querySelectorAll('[data-menue-zu], a').forEach((el) => el.addEventListener('click', () => oeffne(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menue.classList.contains('ist-offen')) oeffne(false); });
+})();
+</script>
+<p class="entwurf"><b>Entwurf</b><span> · Website-Relaunch Ofen Wirth · Webrise Studio</span></p>
+</body></html>
